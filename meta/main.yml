@@ -5,6 +5,6 @@ galaxy_info:
   company:
   license: 
   min_ansible_version: 1.7
-  categorie:
-  - web
+  categories:
+   - web
 version: 1.0.0
