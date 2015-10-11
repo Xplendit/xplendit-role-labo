@@ -1,0 +1,10 @@
+---
+galaxy_info:
+  author: Jordi Stevens
+  description: Role used for completing labo for the Enterprise Linux course
+  company:
+  license: 
+  min_ansible_version: 1.7
+  categorie:
+  - web
+version: 1.0.0

@@ -1,0 +1,15 @@
+- name: Changing interface enp0s8 to public
+  command: sudo firewall-cmd --permanent --zone=public --change-interface=enp0s8
+  notify: restart firewalld
+     
+- name: Install certificate key file
+  template:
+    src: localhost.key
+    dest: /etc/pki/tls/private/localhost.key
+  notify: restart httpd
+  
+- name: Install certificate file 
+  template:
+    src: localhost.crt
+    dest: /etc/pki/tls/certs/localhost.crt
+  notify: restart httpd
